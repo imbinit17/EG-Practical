@@ -1,0 +1,77 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../assets/eg_logo.png">
+    <style>
+        .container {
+            margin: auto;
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 1.5em;
+        }
+
+        .convert-temp {
+            margin-bottom: 1.5em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 0.5em;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input {
+            width: 80%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="../assets/university_logo.png" alt="University Logo" width="100">
+        <a href="../index.html">RETURN TO HOME</a>
+    </div>
+
+    <div class="practical">
+        <h1>Practical - 8</h1>
+        <h2>Write a JavaScript program to convert temperatures to and from celsius, Fahrenheit.</h2>
+    </div>
+
+    <div class="container">
+        <h2>Temperature Converter</h2>
+        <div class="convert-temp">
+            <label>Fahrenheit</label>
+            <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit">
+        </div>
+        <div class="convert-temp">
+            <label>Celsius</label>
+            <input type="number" id="celsius" placeholder="Enter Celsius">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Binit Ranjan Das | Find me on <a href="https://x.com/imbinit17" target="_blank">X</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

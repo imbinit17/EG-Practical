@@ -1,0 +1,282 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../assets/eg_logo.png">
+    <title>Time Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .heading {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .table {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            min-width: 1000px;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 8px;
+            text-align: center;
+            vertical-align: top;
+            word-break: normal;
+            overflow-wrap: break-word;
+        }
+
+        table th:nth-child(1), table td:nth-child(1),
+        table th:nth-child(3), table td:nth-child(3) {
+            width: auto !important;
+            white-space: normal !important;
+        }
+        th {
+            background-color: #f4f4f4;
+            padding: 12px;
+            color:black;
+        }
+    
+        td div {
+            margin-bottom: 4px;
+        }
+        .subject { font-weight: bold; }
+        .faculty { font-style: italic; font-size: 0.9em; }
+        .location { font-size: 0.9em; color: #555; }
+
+        @media (max-width: 768px) {
+            table {
+                display: table;
+                white-space: normal;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="../assets/university_logo.png" alt="University Logo" width="100">
+        <a href="../index.html">RETURN TO HOME</a>
+    </div>
+
+    <div class="practical">
+        <h1>Practical - 3</h1>
+        <h2>Use table tag to format web page. Also create the Time Table of your class using table tag.</h2>
+    </div>
+
+    <div class="container">
+        <div class="heading">
+            <h1>Weekly University Schedule for B.Tech CSE (IOT) students</h1>
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>9:00 - 10:00</th>
+                        <th>10:00 - 11:00</th>
+                        <th>11:00 - 12:00</th>
+                        <th>12:00 - 1:00</th>
+                        <th>1:00 - 2:00</th>
+                        <th>2:00 - 3:00</th>
+                        <th>3:00 - 4:00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Monday</th>
+                        <td>
+                            <div class="cell">
+                                <div class="subject">Communication Skills in English</div>
+                                <div class="faculty">Dr. Abhinav Ahlawat</div>
+                                <div class="location">Room No : 103</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="subject">SPORTS</div>
+                        </td>
+                        <td>
+                            <div class="subject">LUNCH</div>
+                        </td>
+                        <td>
+                            <div class="subject">Mathematics</div>
+                            <div class="faculty">Dr. Vipin Gupta</div>
+                            <div class="location">Room No : 404</div>
+                        </td>
+                        <td>
+                            <div class="subject">Engineering Graphics</div>
+                            <div class="faculty">Dr. Geetanjali</div>
+                            <div class="location">Room No : 103</div>
+                        </td>
+                        <td colspan="2">
+                            <div class="subject">Physics Laboratory</div>
+                            <div class="faculty">Dr. Balvinder Singh</div>
+                            <div class="faculty">Mr. Ashish</div>
+                            <div class="group">Students Group : 1</div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>
+                            <div class="subject">Programming for Problem Solving using C</div>
+                            <div class="faculty">Ms. Jyoti Rani</div>
+                            <div class="location">Room No : 103</div>
+                        </td>
+                        <td>
+                            <div class="subject">SPORTS</div>
+                        </td>
+                        <td>
+                            <div class="subject">LUNCH</div>
+                        </td>
+                        <td>
+                            <div class="subject">
+                                <div class="subject">Mathematics</div>
+                            <div class="faculty">Dr. Vipin Gupta</div>
+                            <div class="location">Room No : 103</div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="subject">Physics</div>
+                            <div class="faculty">Dr. Govind</div>
+                            <div class="location">Room No : 103</div>
+                        </td>
+                        <td colspan="2">
+                            <div class="subject">C Programming Lab</div>
+                            <div class="faculty">Ms. Jyoti Rani</div>
+                            <div class="location">Lab : 10</div>
+                            <div class="group">Students Group : 1</div>
+
+                            <br>
+
+                            <div class="subject">Engineering Graphics Lab</div>
+                            <div class="faculty">Dr. Sangeeta Yadav</div>
+                            <div class="location">Lab : 8</div>
+                            <div class="group">Students Group : 2</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td>
+                            <div class="subject">Communication Skills in English</div>
+                            <div class="faculty">Dr. Abhinav Ahlawat</div>
+                            <div class="location">Room No : 103</div>
+                        </td>
+                        <td>
+                            <div class="subject">Programming for Problem Solving using C</div>
+                            <div class="faculty">Ms. Jyoti Rani</div>
+                            <div class="location">Room No : 103</div>
+                        </td>
+                        <td>
+                            <div class="subject">SPORTS</div>
+                        </td>
+                        <td>
+                            <div class="subject">Mathematics</div>
+                            <div class="faculty">Dr. Vipin Gupta</div>
+                            <div class="location">Room No : 404</div>
+                        </td>
+                        <td>
+                            <div class="subject">LUNCH</div>
+                        </td>
+                        <td>
+                            <div class="subject">Basics of Environmental Sciences</div>
+                            <div class="faculty">Dr. Shayantani Das</div>
+                            <div class="location">Room No : 101</div>
+                        </td>
+                        <td>
+                            <div class="subject">Physics</div>
+                            <div class="faculty">Dr. Govind</div>
+                            <div class="location">Room No : 103</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>
+                            <div class="subject">Programming for Problem Solving using C</div>
+                            <div class="faculty">Ms. Jyoti Rani</div>
+                            <div class="location">Room No : 103</div>
+                        </td>
+                        <td>
+                            <div class="subject">Communication Skills in English</div>
+                            <div class="faculty">Dr. Abhinav Ahlawat</div>
+                            <div class="location">Room No : 103</div>
+                        </td>
+                        <td>
+                            <div class="subject">Physics</div>
+                            <div class="faculty">Dr. Govind</div>
+                            <div class="location">Room No : 103</div>
+                        </td>
+                        <td>
+                            <div class="subject">Physics</div>
+                            <div class="faculty">Dr. Govind</div>
+                            <div class="location">Room No : 101</div>
+                        </td>
+                        <td>
+                            <div class="subject">LUNCH</div>
+                        </td>
+                        <td colspan="2">
+                            <div class="subject">Engineering Graphics Lab</div>
+                            <div class="faculty">Dr. Sangeeta Yadav</div>
+                            <div class="location">Lab : 8</div>
+                            <div class="group">Students Group : 1</div>
+
+                            <br>
+
+                            <div class="subject">C Programming Lab</div>
+                            <div class="faculty">Ms. Jyoti Rani</div>
+                            <div class="location">Lab : 10</div>
+                            <div class="group">Students Group : 2</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td>
+                            <div class="subject">Mathematics</div>
+                            <div class="faculty">Dr. Vipin Gupta</div>
+                            <div class="location">Room No : 404</div>
+                        </td>
+                        <td colspan="2">
+                            <div class="subject">Physics Laboratory</div>
+                            <div class="faculty">Dr. Balvinder Singh</div>
+                            <div class="faculty">Mr. Ashish</div>
+                            <div class="group">Students Group : 2</div>
+                        </td>
+                        <td>
+                            <div class="subject">Basics of Environmental Sciences</div>
+                            <div class="faculty">Dr. Shayantani Das</div>
+                            <div class="location">Room No : 101</div>
+                        </td>
+                        <td>
+                            <div class="subject">LUNCH</div>
+                        </td>
+                        <td>
+                            <div class="subject">SPORTS</div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Binit Ranjan Das | Find me on <a href="https://x.com/imbinit17" target="_blank">X</a></p>
+    </footer>
+</body>
+</html>

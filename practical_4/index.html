@@ -1,0 +1,294 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imbinit17 - Profile Page</title>
+    <link rel="icon" type="image/png" href="../assets/eg_logo.png"> 
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sidebar {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            height: fit-content;
+        }
+
+        .sidebar-card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #333;
+        }
+
+        .sidebar h1 {
+            margin: 15px 0 5px 0;
+            font-size: 1.6rem;
+            color: #fff;
+        }
+
+        .sidebar p {
+            margin: 0;
+            color: #aaa;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .social-btn {
+            background: #333;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        
+        .social-btn:hover {
+            background: #00d4ff;
+            color: black;
+        }
+
+        .social-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .wide {
+            grid-column: span 2;
+        }
+
+        h2 {
+            color: #00d4ff;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .tags {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tags li {
+            background: #333;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .tags li:hover {
+            background: #00d4ff;
+            color: #000;
+            transform: translateY(-2px);
+        }
+
+        .music-player {
+            background: #252525;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #444;
+            border-radius: 2px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 65%;
+            height: 100%;
+            background: #00d4ff;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+            .content {
+                grid-template-columns: 1fr;
+            }
+            .wide {
+                grid-column: span 1;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            border-top: 1px solid #333;
+            background-color: #1e1e1e;
+            color: #aaa;
+        }
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left-column">
+            <div class="sidebar">
+                <img src="https://pbs.twimg.com/profile_images/1944078491042885632/n9nb9Sc8_400x400.jpg" alt="Profile" class="profile-img">
+                <h1>Binit Ranjan Das</h1>
+                <p>Student</p>
+                
+                <div class="social-links">
+                    <a href="https://x.com/imbinit17" class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="mailto:imbinit17@gmail.com" class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                    <a href="https://github.com/imbinit17" class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://t.me/imbinit17" class="social-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <h2 style="justify-content: center;">Hobbies</h2>
+                <ul class="tags" style="justify-content: center;">
+                    <li>🎮 Gaming</li>
+                    <li>📚 Reading</li>
+                    <li>💻 Leetcode</li>
+                    <li>🐦 Posting on X</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <h2 style="justify-content: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                    Music
+                </h2>
+                <div class="music-player">
+                    <p style="margin: 0; color: #fff; font-weight: bold;">Vibing to Dhanda Nyoliwala</p>
+                    <p style="margin: 5px 0 0 0; font-size: 0.8rem; color: #aaa;">Recent Days</p>
+                    
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: #aaa;">
+                        <span>1:24</span>
+                        <span>3:45</span>
+                    </div>
+
+                    <p style="margin-top: 15px; font-size: 0.85rem; border-top: 1px solid #333; padding-top: 10px;">
+                        <span style="color: #00d4ff;">Favs:</span> Prophec, Raxstar, Imran Khan
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            
+            <div class="card wide">
+                <h2>About Me</h2>
+                <p>
+                    Hi there, I'm Binit, a student in his first year in Gurugram University pursuing a bachelor's degree of technology in Computer Science (Internet of Things). <br></br> I am born and raised in Dhanbad, Jharkhand which is popularly known as the "coal capital of India". However, I am a Maithil i.e belonging from the Mithilanchal region of Bihar which is also the in-law-home of Prabhu Shri Ram of Ayodhya. <br>I am fluent in three languages: English, Hindi and Maithili. My years in early life upto matriculation were fondly spent in De Nobili School, Sindri along with my friends and teachers. Subjects always intrigued me were: Computer Applications, Physics and Civics.
+                </p>
+                <p>
+                    My interests in economy, administration and governance have been of an order where I can say I would have been an advocate if not for Computer Science. I am quite active on the platform Twitter/X and though I may look like an introvert, I am very open about myself and my opinions in the right circles.
+                </p>
+            </div>
+
+            <div class="card wide">
+                <h2>My Programming Journey</h2>
+               <p>
+                I generally refrain from using the word “coding”. My computer teacher at DNS used to say: “The word ‘coding’ doesn’t signify the vital essence of the field. There exists a problem, small or big, and there’s a person who uses his knowledge, wisdom and skill to engineer a solution. That person is an engineer. The word ‘coder’ underestimates that skill and the engineering behind it.”
+He said this while introducing us to Programming in Java in 8th grade. Five years later, I still find his words true.
+               </p>
+
+               <p>
+                QBASIC in 6th and HTML with inline styling in 7th were mostly rote learning. Java was when it actually triggered my curiosity. How all modern-day systems, major financial systems, OTT platforms like Netflix, everything of scale, is built upon such small lines of code. I remember showing a mall billing program (pure CLI, loops and bill total) to my dad. No GUI because we never touched Swing. Still pushed myself to self-learn Tkinter in Python and Java Swing and built a few basic GUI projects. Even made a desktop-native banking application in Swing using text files as database because I didn’t know anything about databases or networking back then. Later learned real-time DB interaction by working on some projects (some private for others).
+               </p>
+
+               <p>
+                I didn’t take Computer Science in senior secondary to focus on entrance exams, but I couldn’t stop exploring Java, Python, MySQL and most importantly the architecture behind any codebase.Here in first semester at Gurugram University, C programming was introduced. Initially I thought I already knew it because of Java command and I was solving questions easily. But C gave me a completely new perspective. Now I have to unlearn, learn and re-learn things. My rigid OOP-obsessed brain is finally opening up. Feels more confident and more wanting to explore whatever else Computer Science has to offer.
+               </p>
+            
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Binit Ranjan Das | Find me on <a href="https://x.com/imbinit17" target="_blank">X</a></p>
+    </footer>
+
+</body>
+</html>

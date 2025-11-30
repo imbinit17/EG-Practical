@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Central Stylesheet</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../assets/eg_logo.png">
+
+    <style>
+    .container h1, .container p {
+    text-align: center;
+    }
+
+    .code {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-left: 5px solid #007bff;
+        border-radius: 4px;
+        padding: 15px;
+        margin: 20px 130px;
+        font-family: 'Courier New', Courier, monospace;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333;
+    }   
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <img src="../assets/university_logo.png" alt="University Logo" width="100">
+        <a href="../index.html">RETURN TO HOME</a>
+    </div>
+
+    <div class="container">
+        <h1>This is the central stylesheet for all practicals.</h1>
+        <p>All practical HTML files link to this stylesheet for consistent stylin on navbar and footer.</p>
+    
+        <div class="code">
+            <pre><code>
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.practical{
+    margin-top: 20px;
+    margin:auto;
+    width: 90%;
+}
+
+.practical h1{
+    text-align: center;
+    color: #009879;
+    margin-bottom: 20px;
+ }
+
+.practical h2{
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+ }
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.nav img {
+    height: 50px;
+    width: auto;
+}       
+
+.nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-size: 0.9em;
+}
+
+.nav a:hover {
+    background-color: #333;
+    color: #fff;
+}                
+            </code></pre>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Binit Ranjan Das | Find me on <a href="https://x.com/imbinit17" target="_blank">X</a></p>
+    
+</body>
+</html>
